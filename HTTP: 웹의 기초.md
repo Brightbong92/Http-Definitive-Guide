@@ -27,3 +27,30 @@ TCP/IP
   - 단순히 HTTP 통신을 전달하기만 하는 특별한 프락시
 - 에이전트
   - 자동화된 HTTP 요청을 만드는 준지능적(semi-intelligent) 웹 클라이언트
+
+프락시 (Proxy)
+  - 사용자를 대신해서 서버에 접근, 주로 보안을 위해 사용, 요청과 응답을 필터링
+
+캐시 (Cache)
+  - 자주 찾는것의 사본을 저장해두는 특별한 종류의 HTTP 프락시 서버
+  - 다음번에 클라이언트가 같은 문서를 요청하면 그 캐시가 갖고있는 사본을 받을 수 있음
+
+게이트웨이 (Gateway)
+  - 다른 서버들의 중개자로 동작하는 특별한 서버
+  - 주로 HTTP 트래픽을 다른 프로토콜로 변환하기 위해 사용
+
+
+스킴의 바다
+- http
+  - 사용자 이름이나 비밀번호가 없다는것을 제외하고는, 일반 URL 포맷을 지키는 하이퍼텍스트 전송 프로토콜 (Hypertext Transfer Protocol) 스킴이다. 포트값이 생략되어 있으면 기본값은 80이다.
+  - 기본형식:
+    - http://<호스트>:<포트>/<경로>?<질의>#<프래그먼트>
+    - http://www.joes-hardware.com/index.html
+    - http://www.joes-hardware.com:80/index.html
+- https
+  - https 스킴은 http 스킴과 거의 같다. 다른 점이라고는 https는 HTTP의 커넥션의 양 끝단에서 암호화하기 위해
+    넷스케이프에서 개발한 보안 소켓 계층(Source Sockets Layer, SSL)을 사용 한다는 것뿐이다. 
+  - 문법은 HTTP와 같고 기본 포트 값은 443이다.
+    - https://www.joes-hardware.com/secure/index.html
+ 
+
